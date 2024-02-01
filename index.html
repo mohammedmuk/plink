@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plink</title>
+    <link rel="stylesheet" href="css/plink.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <section class="landing">
+      <header>
+        <div class="logo"><img src="assets/Imgs/logo--light.svg" /></div>
+        <nav>
+          <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login With Mollie</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main-text">
+        <h1 class="h1-text">
+          Send payment <br />
+          requests, get paid <br />
+          fast!
+        </h1>
+        <h4>86% of our payment requests get paid within 12 hours.</h4>
+      </div>
+      <div class="video-bx">
+        <video src="assets/intro.webm" autoplay muted loop></video>
+      </div>
+    </section>
+
+    <!-- End Landing -->
+
+    <!-- Start Payment Requests  -->
+
+    <section class="pr">
+      <div class="first-items">
+        <div class="main-text">
+          <h1>
+            <span>Create</span> <span>payment</span> <span>requests</span>
+          </h1>
+          <h4>
+            <span
+              >Make a simple payment link in
+              <span class="blue">5 seconds.</span>
+            </span>
+            <span>Use our powerful features to customize your request.</span>
+          </h4>
+        </div>
+        <div class="coin-1">
+          <video src="assets/coin_1.mp4" autoplay muted loop></video>
+        </div>
+        <div class="coin-2">
+          <video src="assets/coin_3.webm" autoplay muted loop></video>
+        </div>
+        <div class="coin-3">
+          <video src="assets/coin_3.webm" autoplay muted loop></video>
+        </div>
+      </div>
+      <div class="text-con">
+        <div class="text-box">
+          <div class="one">
+            <h3>One-off or reusable</h3>
+            <span> Request one payment. Or get paid </span>
+            <span>multiple times with a reusablelink.</span>
+          </div>
+          <div class="two">
+            <h3>Add downloads</h3>
+            <span>Offer downloadable files after your</span>
+            <span>customer completes the payment.</span>
+          </div>
+          <div class="three">
+            <h3>Say thanks your way</h3>
+            <span>Show a custom thanks you massage</span>
+            <span>after successful payment.</span>
+          </div>
+          <div class="four">
+            <h3>Track&Trace</h3>
+            <span>Track in real-time whether you request</span
+            ><span>gets sent, viewed and paid</span>
+          </div>
+        </div>
+      </div>
+      <div class="email">
+        <div class="video">
+          <video src="assets/mail_loop.mp4" autoplay muted loop></video>
+        </div>
+        <div class="text-bx">
+          <span>Easily</span>
+          <span>send requests</span>
+          <span>via e-mail or SMS</span>
+          <h4>... or copy-paste the link</h4>
+        </div>
+      </div>
+      <div class="scan">
+        <h1><span>Scan</span><span>& Go</span></h1>
+        <span>
+          <span>
+            Transform your payment link into a QR code that customers can scan
+            with their
+          </span>
+          <span>phone to pay.</span>
+        </span>
+        <div class="ball"></div>
+        <div class="qr-code">
+          <img src="assets/Imgs/QR-Code2.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- End payment Requests  -->
+
+    <!-- Start Payment Method -->
+
+    <div class="pm">
+      <h1>
+        <span>All major</span>
+        <span>payment methods</span>
+      </h1>
+      <p>
+        <span>
+          Plink works with Mollie. Your customer can complete the payment
+          request
+        </span>
+        <span>using all major payment methods, like creditcard or iDEAL.</span>
+      </p>
+      <div class="img-box">
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+    </div>
+
+    <!-- End Payment Method -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="video-box">
+        <video src="assets/loop.webm" autoplay muted loop></video>
+      </div>
+      <div class="main-text">
+        <h1 class="h1-text">
+          Start for <br />
+          free today
+        </h1>
+        <a href="#">Login With Mollie</a>
+      </div>
+      <div class="copyright">
+        <div class="powered">
+          <p>Plink is powered by</p>
+        </div>
+        <div class="copy">
+          <p>Copyright © 2023 Mollie B.V. All rights reserved.</p>
+        </div>
+        <div class="lang">
+          <span>English</span>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script>
+      let pmNumber = 0,
+        pmImgs = document.querySelectorAll(".pm .img-box .img");
+
+      setInterval(() => {
+        pmImgs.forEach(
+          (e) => (e.style.backgroundPositionX = "" + pmNumber-- / 12 + "vw")
+        );
+      }, 50);
+    </script>
+  </body>
+</html>
